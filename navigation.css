@@ -1,0 +1,140 @@
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.unordered {
+    list-style-type: squre;
+    line-height: 170%;
+    background: #97f88f;
+    padding: 20px;
+    width: 30%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.unordered li {
+    background: #c2fac6;
+    margin: 5px;
+}
+
+.nested-ul li{
+    list-style-type: circle;
+    background: #d2ffd5;
+    margin: 5px;
+}
+
+.ordered {
+    background: #97f88f; 
+    padding: 50px;
+    width: 20%;
+    font-family: Georgia, serif;
+    font-size: 1.3em;
+}
+    
+.ordered li {
+    background: #c2fac6;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.custom-box-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none; 
+}
+
+.custom-box-list li {
+    counter-increment: step-counter;
+    margin-bottom: 10px;
+    font-family: Georgia, serif;
+}
+
+.custom-box-list li::before {
+    content: counter(step-counter);
+    margin-right: 5px;
+    font-size: 80%;
+    background-color: #97f88f;
+    color: white;
+    font-weight: bold;
+    padding: 3px 8px; 
+    border-radius: 3px;
+}
+
+.list-image {
+    list-style: none;
+    padding-left: 0;
+}
+    
+.list-image li {
+    position: relative;
+    padding-left: 30px;
+    line-height: 170%;
+    font-family: Georgia, serif;
+}
+    
+.list-image li:before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-image: url('https://image.flaticon.com/icons/png/128/3571/3571565.png');
+    background-size: cover;
+    background-position: center;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.song-links {
+    list-style: none;
+    padding-left: 0;
+    background: #97f88f; 
+    font-family: Georgia, serif;
+    padding: 40px;
+    width: 350px;
+}
+    
+.song-links li a {
+    position: relative;
+    color: #111;
+    padding-left: 30px;
+    line-height: 170%;
+    font-family: Georgia, serif;
+    background: #c2fac6;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.song-links li a:before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-image: url('https://image.flaticon.com/icons/png/128/3571/3571541.png');
+    background-size: cover;
+    background-position: center;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
